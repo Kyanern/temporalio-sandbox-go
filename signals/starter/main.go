@@ -32,6 +32,7 @@ func main() {
 
 	log.Println("Started workflow", "WorkflowID", we.GetID(), "RunID", we.GetRunID())
 
+	//this part is just stub code to choose between continue or cancel
 	timeseed := time.Since(time.Date(2000, time.January, 1, 0, 0, 0, 0, time.Now().Location()))
 	rand.Seed(timeseed.Milliseconds())
 	choice := rand.Int() % 2
